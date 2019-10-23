@@ -17,12 +17,10 @@ object SafeEval {
     foldRightEval(as, Eval.now(acc)) { (a, b) =>
       b.map(fn(a, _))
     }.value
-
-
 }
-
 
 //object Main extends App {
 //  import SafeEval._
 //  println(foldRight((1 to 10000).toList, 0L)(_ + _))
 //}
+
